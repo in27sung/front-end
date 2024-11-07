@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/* class = . , id = # */
+#box {
+	border: 6px solid #090;
+	margin: 80px;
+	padding: 1em;
+}

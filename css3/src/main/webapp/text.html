@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>text</title>
+<link href="style.css" rel="stylesheet"/>
+<link href="text.css" rel="stylesheet"/>
+</head>
+<body>
+
+<nav>
+	<a href="layout.html">layout.html</a>
+	<a href="basic.html">basic.html</a>
+	<a href="font.html">font.html</a>
+	<a href="text.html">text.html</a>
+	<a href="boxModel.html">boxModel.html</a>
+</nav>
+
+<h1>text로 시작하는 글자 속성들</h1>
+<ul>
+	<li>text-align; set the horizontal alignment of a text</li>
+	<li>text-decoration:; 글자의 줄들</li>
+	<li>text-indent:; 들여쓰기</li>
+	<li>text-transform::;(영문) 대소문자 변경</li>
+	<li>text-overfloew:; 영역 밖의 글자 지정 x</li>
+	<li>text-shadow:; 글자의 그림자 x</li>
+</ul>
+
+<section id="sec01">
+<h2>1. text-align:; 수평 정렬</h2>
+
+<p class="ta01">text-align: left; 수평 정렬 - 왼쪽</p>
+<p class="ta02">text-align: center; 수평 정렬 - 중앙</p>
+<p class="ta03">text-align: right; 수평 정렬 - 오른쪽</p>
+<p class="ta04">text-align: justify; 수평 정렬 - 양끝 맞춤 <br>
+In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind
+every since. 'Whenever you feel like criticising anyone,' he told me, 'just remember that all the people in this 
+world haven't had the advantages that you've had.'
+</p>
+<form action="test.jsp" method="post">
+<div style="text-align: center;">
+<input type="text" value="left" style="text-align: left;">
+<input type="text" value="center" style="text-align: center;">
+<input type="text" value="right" style="text-align: right;">
+<hr>
+<button style="width: 70%;">ok</button>
+</div>
+</form>
+</section>
+<section id="sec02">
+	<h2>2. text-decoration: ; 글자의 줄들</h2>
+	
+	<p class="td01">text-decoration: overline;</p>
+	<p class="td02">text-decoration: line-throught;</p>
+	<p class="td03">text-decoration: underline;</p>
+	<p> text-decoration:
+	<a href="" class="td04">none</a>;</p>
+</section>
+
+<section id="sec03">
+	<h2>3. text-indent:; 들여쓰기</h2>
+	
+	<p class="ti01">text-indent: 10px; 들여쓰기</p>
+	<p class="ti02">text-indent: 2em; 들여쓰기</p>
+	<p class="ti03">text-indent: 10%; 들여쓰기</p>
+	<p class="ti04">text-indent: -100px; 내어쓰기</p>
+	<p class="ti05">text-indent: 15%; 첫줄만 적용<br>
+	In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind
+	every since. 'Whenever you feel like criticising anyone,' he told me, 'just remember that all the people in this 
+	world haven't had the advantages that you've had.'
+	</p>
+</section>
+
+<section id="sec04">
+	<h2>4. text-transform:; 영문 대소문자 변경</h2>
+	
+	<p class="tt01">Text-Transform: lowercase; 소문자 변경</p>
+	<p class="tt02">tExt-tRansform: uppercase; 대문자 변경</p>
+	<p class="tt03">text-transform: capitalize; 첫글자만 대문자 변경</p>
+	<p class="tt04">texT-traNsform: none; (기본값)대소문자 변경 없음</p>
+</section>
+</body>
+</html>

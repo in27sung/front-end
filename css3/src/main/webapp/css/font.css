@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+body {
+	font-family: "nanum-gothic-regular", sans-serif;
+}
+
+h1 {
+	background-color: #3ef;
+}
+
+section {
+	border: 4px solid #ccc;
+	margin: 3em 1em;
+	padding: 1em;
+}
+
+/* 주석단축키 command + / */
+/* 1. font-size: ; 글자크기*/
+
+/* 기본 글자 크기 16px */
+#sec01 {
+	font-size: 20px;
+}
+
+.fs01 {
+	font-size: 16px;
+	color: #00d;
+}
+
+.fs02 {
+	font-size: 12px;
+}
+
+.fs03 {
+	font-size: 20px;
+}
+/* 상위요소 기준에 따라 크기가 달라짐 */
+.fs04 {
+	font-size: 1em;
+	color: #0a0;
+}
+
+.fs05 {
+	font-size: 0.75em;
+}
+
+.fs06 {
+	font-size: 1.25em;
+}
+
+/* html 요소에 따라 달라지므로 */
+.fs07 {
+	font-size: 1rem;
+}
+
+.fs08 {
+	font-size: 0.75rem;
+}
+
+.fs09 {
+	font-size: 1.25rem;
+}
+
+/* 2. font-weight: ; 글자 두께*/
+.fw01 {
+	font-weight: 100;
+}
+
+.fw02 {
+	font-weight: 200;
+}
+
+.fw03 {
+	font-weight: 300;
+}
+
+.fw04 {
+	font-weight: 400;
+}
+
+.fw05 {
+	font-weight: 500;
+}
+
+.fw06 {
+	font-weight: 600;
+}
+
+.fw07 {
+	font-weight: 700;
+}
+
+.fw08 {
+	font-weight: 800;
+}
+
+.fw09 {
+	font-weight: 900;
+}
+
+.fw10 {
+	font-weight: bold;
+	color: #00a;
+}
+
+.fw11 {
+	font-weight: normal;
+}
+
+/* 3. font=style: ; 글자 기울기*/
+.fst01 {
+	font-style: italic;
+}
+
+.fst02 {
+	font-style: oblique;
+}
+
+.fst03 {
+	font-style: normal;
+}
+
+.fm01 {
+	font-family: "Times New Roman", "Georgia", "Garamond", serif;
+}
+
+.fm02 {
+	font-family: "Arial", "Helvetica", "Verdana", sans-serif;
+}
+
+.fm03 {
+	font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+}
+
+.nanum-gothic-regular {
+	font-family: "Nanum Gothic", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.fm04 {
+	font-family: "Nanum Pen Script", cursive;
+}

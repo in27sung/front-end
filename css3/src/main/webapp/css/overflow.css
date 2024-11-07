@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+#sec01>p {
+	border: 4px dashed #a79;
+	width: 500px;
+	height: 300px;
+	display: inline-block; /* 나란히 배치*/
+	vertical-align: top; /* 수직 위로 정렬 */
+	margin-right: 150px;
+}
+
+.vis {
+	overflow: visible;
+}
+
+.hid {
+	overflow: hidden;
+}
+
+.scr {
+	overflow: scroll;
+}
+
+.aut {
+	overflow: auto;
+}
+
+#sec01:hover>.scr, #sec01:hover.aut {
+	height: 700px;
+}
+
+#dv {
+	border: 5px solid #aca;
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+}
+
+#dv>img {
+	width: 600px;
+	height: 600px;
+	opacity: 0.5; /* 불투명도 0~1사이의 값*/
+}
+
+#dv:hover>img {
+	width: 300px;
+	height: 300px;
+	transition: 1s; /* 애니메이 효과*/
+	opacity: 1;
+}
+
+#dv:visited>img {
+	
+}
