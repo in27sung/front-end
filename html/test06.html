@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlinks</title>
+</head>
+<body>
+    <h1 style="color:red;">1. Tag로 링크 걸기</h1>
+    <hr>
+    <nav>
+        <a href="test06.html">링크수업1</a>
+        <a href="test06-1.html">링크수업2</a>
+        <a href="test06-1.html#photo-03">링크수업2 photo-03</a>
+    </nav>
+    <p>
+        &lt;a href="pathname"&gt; 안내텍스트 &lt;/a&gt;<br>
+        링크 걸린 텍스트는 밑줄이 생기고 마우스커서가 손모양으로 바뀌며
+        색상은 세가지 중 하나로 나옴 <br>
+        (초기링크 = 파랑 / 방문한 링크 = 보라 / 활성화 링크 =빨강)
+    </p>
+
+    <ol>
+        <li>절대경로로 링크 걸기 <br>
+            <a href="https://www.naver.com/" target="_blank"><b>naver</b></a> <br>
+            <a href="https://www.w3schools.com/" target="_blank"><b>w3schools</b></a>
+        </li>
+        <li>상대경로로 링크 걸기</li>
+    </ol>
+
+    <hr>
+    <h2 style="color:orange;" id="targetlink">링크를 걸어서 보여줄 수 있는 것</h2>
+    <ul>
+        <li>URL(Uniform Resource Locator)</li>
+        <li>web pages: *.htm, *.html</li>
+        <li>images: *.gif, *.jpg, *.png <a href="img/png/bird.png" target="_parent">bird.png</a> </li>  
+        <li>videos: *.ogg, *.webm, *.mp4 <a href="img/217115_medium.mp4" target="_top">ocean</a></li>
+        <li>text files: *.txt <a href="url.txt" target="_blank">Bookmark</a></li>
+    </ul>
+    <h2 style="color:rgb(147, 147, 19);">링크를 보여주는 방식 지정</h2>
+    <ul>
+        <li>기본값. 현재 자리에 열기</li>
+        <li>새 탭에서 열기
+            <ul>
+                <li><mark>target="_blank"</mark></li>
+            </ul>
+        </li>
+        <li>target="_parent"(프레임구조)상위에서 열기</li>
+        <li>target="_top"(프레임구조)나뉨없이 전체에 열기</li>
+    </ul>
+    <hr>
+    <h2 style="color:green">Web browser가 처리 불가능한 종류를 링크 걸면 다운로드 된다</h2>
+    <a href="img/[데이터 전문가 포럼] SQL 개발자 스터디 교재(2020.08.22.).pdf" target="_blank">pdf파일</a>
+
+    <hr>
+    <h2 style="color:blue">링크걸린 이미지</h2>
+    <p>
+        &lt;a href="경로"&gt;<br>
+        &lt;img src="이미지경로" alt="..."&gt;<br>
+        &lt;/a&gt;
+
+    </p>
+    <a href="http://www.daum.net" target="_blank">
+        <img src="img/png/daum.png" width="100" alt="Daum"> <br>
+    </a>
+    <a href="http://itwillbs.co.kr" target="_blank">
+        <img src="img/png/itwill.png" alt="itwill"> <br>
+    </a>
+    <a href="https://www.w3schools.com/html/default.asp" target="_blank">
+        <img src="img/gif/html5.gif" alt="html tutorial" width="80"> <br>
+    </a>
+
+    <hr>
+    <h3 style="color:navy">tooltop(풍선도움말) 넣기</h3>
+    [title="context"] <br>
+    <a href="https://www.w3schools.com/html/default.asp" target="_blank" title="w3schools.com으로 이동"><br>
+        <img src="img/gif/html5.gif" alt="html tutorial" width="80"> <br>
+    </a>
+
+    <hr>
+    <h3 style="color: purple;">이메일 링크 걸기</h3>
+    [mailto:email] <br>
+    <a href="mailto:class@itwillbs.co.kr">아이티윌(부산) 메일 문의</a><br>
+    <br>
+    <a href="mailto:in27sung@gmail.com"><img src="img/email.png" alt="email address" title="email address"></a> <br>
+
+
+    <video src="img/14385-256955049_small.mp4" height="500" muted loop autoplay></video>
+    <hr>
+    <h3>썸네일 이미지</h3>
+    <p>
+        <a href="img/building-7014904_640.jpg" target="_blank" title="원본사진보기">
+            <img src="img/building-7014904_640.jpg" alt="building" width="200">
+        </a>
+        <a href="img/cat-8275147_640.jpg" taget="_blank" title="원본사진보기">
+            <img src="img/cat-8275147_640.jpg" alt="cat" width="200">
+    </a> 
+        <a href="img/mountains-8585535_640.jpg" target="_blank" title="원본사진보기">
+            <img src="img/mountains-8585535_640.jpg" alt="pexels" width="200">
+        </a>
+        <a href="img/pexels-apasaric-2041556.jpg" target="_blank" title="원본사진보기">
+            <img src="img/pexels-apasaric-2041556.jpg" alt="shanghai" width="200">
+        </a>
+    </p>
+<hr>
+    <h2 style="color: hotpink">페이지 최상단으로 이동하는 링크 - <mark>#</mark></h2>
+    <a href="#">top</a>
+
+
+    <a href="/Users/Insung/Documents/html/test05.html"><h3>Before</h3></a>
+	<a href="/Users/Insung/Documents/html/forms.html"><h3>Next</h3></a>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+</head>
+<body>
+    <h1>iframe</h1>
+    <p> iframe src="경로".../iframe <br>
+        웹페이지안의 독립된 공간
+    </p>
+    <iframe src="test07-황인성.html"> 
+        iframe미지원 브라우저 사용자용 메세지
+    </iframe>
+    <h2>iframe 안에 불러올 수 있는 종류 (브라우저 처리 가능)</h2>
+
+    <h3>1. URL(웹주소)</h3>
+    <iframe src="https://www.kakaocorp.com/page/" width="1200" height="500"></iframe>
+
+    <h3>2. *.htm/*.html (웹페이지) (웹)</h3>
+    <iframe src="test05.html" width="800" height="500"></iframe>
+
+    <h3>3. *.git / *.jpg / *.png (image)</h3>
+    <iframe src="img/shanghai-6579053_640.jpg" width="500" height="230"></iframe>
+    
+    <h3>4. *.ogg / *.webm / *.mp4 (video)</h3>
+    <iframe src="img/sky.mp4" width="500" height="230"></iframe>
+
+    <h3>5. *.txt (텍스트파일)</h3>
+    <iframe src="url.txt" width="300" height="100"></iframe>
+
+    <h2>iframe안에 링크 열기</h2>
+    <p> iframe에는 name의 값을 주고 그 값을 a의 target값과 동일하게 지정.
+        <br>
+        &lt;iframe <b>name="abc"</b>&gt;
+        <br>
+        &lt;a <b>target="abc"</b>&gt;
+    </p>
+    <nav>
+         <a href="test01.html" target="html-box">test01.html</a>
+         <a href="test02.html" target="html-box">test02.html</a>
+         <a href="test03.html" target="html-box">test03.html</a>
+         <a href="test04.html" target="html-box">test04.html</a>
+    </nav>
+    <iframe src="test01.html" width="800" height="500" name="html-box"></iframe>
+
+
+
+    <iframe src="img/cat-8275147_640.jpg" width="640" height="400" name="photoes"></iframe>
+    <br>
+    <nav>
+        <a href="img/bird-8058620_640.jpg" target="photoes">사진1</a>
+        <a href="img/building-7014904_640.jpg" target="photoes">사진2</a>
+        <a href="img/palace-5831869_640.jpg" target="photoes">사진3</a>
+        <a href="img/mountains-8585535_640.jpg" target="photoes">사진4</a>
+        <a href="img/vintage-1950s-887272_640.jpg" target="photoes">사진5</a>
+    </nav>
+
+    <h3></h3>
+    <h3></h3>
+</body>
+</html>

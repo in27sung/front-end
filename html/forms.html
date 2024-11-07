@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form으로 사용자와 연결하는 페이지</title>
+</head>
+<body>
+    <nav>
+        <a href="forms.html">form1</a>
+        <a href="forms2.html">form2</a>
+    </nav>
+    <hr>
+    <h1> form 1 </h1>
+    <p>
+        &lt;form action="*.jsp" method="post/get"&gt; <br>
+        <br>
+        &lt;/form&gt;
+
+        <h2>form 요소들</h2>
+        <form action="test.jsp" method="post">
+            <h3>1. input type="text" - (기본) 한 줄 글상자</h3>
+            <p>
+                input에 대한 설명글을 label태그로 나타내고 <br>
+                input에는 id값을, label에는 for값을 서로 일치시켜 쌍을 이룸.<br>
+                상자 길이는 size="n" 로, 입력가능한 최대 길이는 maxlength="n"로 지정 
+            </p>
+            <label for="fname">Fisrt name</label> <br> <input type="text" id="fname" size="25" placeholder="First name"> <br>
+            <label for="lname">Last name</label> <br> <input type="text" id="lname" maxlength="10" placeholder="Last name"> <br>
+            <h3>2. input type="password" - 암호 글상자</h3>
+            <label for="password">Password</label> <input type="password" id="password" maxlength="14" placeholder="maximum 14 letters">
+            <h3>3. input type="radio" - 단일 선택형 라디오버튼</h3>
+            <p>
+                단일 선택이 되려면 radio 타입의 name 값을 일치 시킴 <br>
+                초기값으로 지정할 항목에는 checked(checked="checked")를 추가함. 
+                평소 주로 이용하는 교통수단은? <br>
+
+                <label><input type="radio" name="transport" id="bus" checked>버스</label><br>
+                <label><input type="radio" name="transport" id="subWay">지하철</label> <br>
+                <label><input type="radio" name="transport" id="bike">자전거</label> <br>
+                <label><input type="radio" name="transport" id="onFoot">도보</label> <br>
+                <label><input type="radio" name="transport" id="car">자가용</label> <br>
+            </p>
+            <h3>4. input type="checkbox" - 다중 선택형 체크박스</h3>
+                - 평소 주로 이용하는 교통수단은?
+                <label><input type="checkbox" checked>버스</label>
+                <label><input type="checkbox">지하철</label>
+                <label><input type="checkbox" checked="checked">자전거</label>
+                <label><input type="checkbox">도보</label>
+                <label><input type="checkbox">자가용</label>
+
+            <h3>5. input type="image" - 전송용 이미지</h3>
+            <p>src속성으로 이미지 경로를 지정, width/height로 크기 지정. <br>
+                <input type="image" src="img/cat-8275147_640.jpg" width="50">
+            </p>
+
+            <h3>6. input type="submit" - 전송 버튼</h3>
+            <p>value속성으로 버튼의 글자를 지정(input type="reset/button"도 동일)<br>
+                <input type="submit" value="회원가입">
+            </p>
+
+            <h3>7. input type="reset" - 취소 버튼</h3>
+            <input type="reset" value="다시쓰기">
+
+            <h3>8. input type="button" - 일반 버튼</h3>
+            <p>form과는 상관없이 특정 스크립트나 스타일 등을 적용하는 용도<br>
+                <input type="button" value= "그냥 버튼" onclick="alert('왜 눌렀니?')">
+            </p>
+
+            <h3>9. input type="hidden" - 숨은 정보 전송용</h3>
+            <p>사용자에게는 보이지 않는 값을 함께 전송
+                <input type="hidden" value="1조 팀장(숨은 값)"> 
+            </p>
+
+            <h3>10. input type="file" - 파일 전송용" </h3>
+            <p>
+              <label for="ls"> 보유 자격증 </label> <input type="file" id="ls">
+            </p>       
+            
+            <h3>11. button.../button 전송용 버튼</h3>
+            <button>가입</button>
+            <button type="reset">취소</button> <br>
+            <button type="button" onclick="alert('일반 버튼')">
+                <i>일반</i> <b>버튼</b></button>
+            <button type="botton"> <img src="img/email.png" width="50">button</button>
+
+            <h3>12. textarea .... textarea</h3>
+            cols=줄 증가 rows=열 증가<br>
+            <textarea cols="50" rows="10"> 자기소개를 해주세요</textarea>
+
+            <h3>13. select ... /select -객관식. 펼침목록(dropdownlist)</h3>
+            <p>
+                - 평소 주로 이용하는 교통수단은?
+                <select>
+                    <option>버스</option>
+                    <option>지하철</option>
+                    <option>자전거</option>
+                    <option>도보</option>
+                    <option>자가용</option>
+                </select>
+                <br><br>
+                13-1.<b>초기값</b>으로 지정할 항목에는 selected(selected="selected") 를 추가함<br>
+                    평소 주로 이용하는 교통수단은? <br>
+                <select>
+                    <option selected>-</option>
+                    <option>버스</option>
+                    <option>지하철</option>
+                    <option>자전거</option>
+                    <option>도보</option>
+                    <option>자가용</option>
+                </select>
+            </p>
+            <p>
+                13-2.<b>다중 선택형</b> 
+                <br>
+                 평소 주로 이용하는 교통수단은? <br>
+                <select multiple>
+                    <option>버스</option>
+                    <option>지하철</option>
+                    <option>자전거</option>
+                    <option>도보</option>
+                    <option>자가용</option>
+                    <!-- control key or shift key를 눌러 2개 이상 선택  -->
+                </select>
+            </p>
+            <br><br>
+            <p>
+                13-3.<b>상자형</b>이 되려면 select에 <b> size="4"</b>를 추가함
+                <br>
+                 평소 주로 이용하는 교통수단은? <br>
+                <select size="4">
+                    <option>버스</option>
+                    <option>지하철</option>
+                    <option>기차</option>
+                    <option>자전거</option>
+                    <option>도보</option>
+                    <option>자가용</option>
+                    <option selected>비행기</option>
+                    <option>요트</option>
+                </select>
+            </p>
+            <p>
+                13-4. option 항목들을 <b>그룹화</b> 하려면 <b>optgroup</b>으로 묶어주고
+                     <b>lavel속성</b>으로 해당 그룹의 제목(주제)를 나타냄<br>
+                 팀 프로젝트 관련 회의 희망 시간은? <br>
+                <select size="5">
+                    <optgroup label="오후">
+                        <option>1교시</option>
+                        <option>2교시</option>
+                        <option>3교시</option>
+                        <option>4교시</option>
+                        </optgroup>
+                    <optgroup label="오후">
+                        <option>5교시</option>
+                        <option>6교시</option>
+                        <option>7교시</option>
+                        <option>8교시</option>
+                    </optgroup>
+                </select>
+            </p>
+            <br><br>
+        </form>
+        <a href="test06.html">이전페이지</a>
+</body>
+</html>

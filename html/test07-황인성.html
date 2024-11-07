@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form2</title>
+</head>
+<body>
+    <hr>
+    <nav>
+        <a href="forms.html">form-1</a>
+        <a href="forms2.html">form-2</a>
+        <a href="test07-황인성.html">form-test</a>
+    </nav>
+    <hr>
+    <h1>ITWILL 회원가입</h1>
+    <form>
+    <input form="text" value="자바(JAVA)개발자 양성">과정
+
+    <fieldset>
+        <legend>[ 필수 입력 ]</legend>
+        <label>&clubs; 이름 <input type="text" size="12"></label> <br>
+        <label>&clubs; 아이디 <input type="text" size="23" placeholder="6~10자 영문과 숫자 조합"></label> <br>
+        <label>&clubs; 비밀번호 <input type="password" size="21" placeholder="8~12자 영문,숫자,특수문자"></label> <br>
+        <br>
+        &clubs; 성별 <br>
+        <label><input type="radio" name="gender" id="male">남</label><br>
+        <label><input type="radio" name="gender" id="female">여</label> <br>
+        <label><input type="radio" name="gender" id="else" checked>기타</label> <br>
+        <br>
+        <label>&clubs; 생년월일 <input type="date"></label>
+        <br>
+        <label>&clubs; 전화번호 <input type="tel" placeholder="(예시) 010-777-8888"></label>
+        <br>
+        <label>&clubs; email <input type="email"></label>
+        <hr>
+        <p>
+        &clubs; 아이티윌부산이 제공하는 정보를 받으시겠습니까?
+        <br><br>
+        <label><input type="radio" name="information" id="agree" checked>받습니다</label>
+        <br>
+        <label><input type="radio" name="information" id="disagree">받지 않겠습니다</label>
+        <br><br>
+        &clubs; 정보나 이벤트 소식을 어떻게 받으시겠습니까?
+        <br>
+        <label><input type="checkbox" name="event" id="eamil" checked>이메일</label>
+        <label><input type="checkbox" name="event" id="text" >문자</label>
+        <label><input type="checkbox" name="event" id="kakao" checked>카카오톡</label>
+        <label><input type="checkbox" name="event" id="mail" >우편</label>
+        </p>
+    </fieldset>
+    <br><br>
+    <fieldset>
+        <legend>[ 선택 입력 ]</legend>
+        <br>
+        &clubs; 자기소개를 해주세요 
+        <br>
+        <textarea cols="80" rows="10" placeholder="간단히 작성하세요"></textarea>
+        <br><br>
+        <lavel>&clubs; 블로그 주소 <input type="text"></lavel>
+        <br><br>
+        &clubs; 학과를 선택해주세요
+        <br>
+        <select>
+            <option>컴퓨터공학과</option>
+            <option selected>산업공학과</option>
+            <option>기계공학과</option>
+            <option>화학공학과</option>
+            <option>전기전자공학과</option>
+            <option>건축공학과</option>
+        </select>
+        <br><br>
+        &clubs; 취미, 특기를 선택해주세요
+        <br>
+        <select multiple size="4">
+            <optgroup label="취미">
+                <option>등산</option>
+                <option>여행</option>
+                <option selected>요리</option>
+                <option>게임</option>
+                </optgroup>
+            <optgroup label="특기">
+                <option>운동</option>
+                <option>바둑</option>
+                <option selected>음악</option>
+                <option>무용</option>
+            </optgroup>
+        </select>
+
+    </fieldset>
+    <br>
+
+    
+    <button>가입</button>
+    <button type="reset">취소</button>
+    </form>
+</body>
+</html>
