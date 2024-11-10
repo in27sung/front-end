@@ -1,0 +1,234 @@
+﻿<html>
+  <head>
+	<title>Lists - 목록 만들기</title>
+  </head>
+  <body>
+	<h1>Lists - 목록 만들기</h1>
+	<hr>
+	Unordered HTML List = &lt;ul&gt; 순서가 없는 목록 <br>
+	Ordered HTML List = &lt;ol&gt; 순서가 있는 목록 <br>
+	HTML Description Lists = &lt;dl&gt; 정의목록 <br>
+
+	<hr>
+	<h2> 1. &lt;ul&gt; 순서가 없는 목록</h2>
+	<ul>
+	  <li>coffee</li>
+	  <li>tea</li>
+	  <li>milk</li>
+	  <li>water</li>
+	</ul>
+
+	<ul>
+	  <li>html</li>
+	  <li>css</li>
+	  <li>javascript</li>
+	</ul>
+
+	
+	<ul>
+	  <li>red</li>
+	  <li>green</li>
+	  <li>blue</li>
+	</ul>
+
+	<hr>
+	<h2> 2. &lt;ol&gt; 순서가 있는 목록 </h2>
+	<ol>
+	  <li>coffee</li>
+	  <li>tea</li>
+	  <li>milk</li>
+	  <li>water</li>
+	</ol>
+
+
+	<ol>
+	  <li>html</li>
+	  <li>css</li>
+	  <li>javascript</li>
+	</ol>
+
+	<h3>목록 앞의 모양 바꾸기 - type="<mark><b>1</b></mark>/a/A/i/I" 속성</h3>
+
+	<ol type="1">
+	  <li>web</li>
+	  <li>java</li>
+	  <li>javascript server</li>
+	  <li>Database</li>
+	  <li>oracle</li>
+	  <li>job</li>
+	</ol>
+
+	<ol type="a">
+	  <li>web</li>
+	  <li>java</li>
+	  <li>javascript server</li>
+	  <li>Database</li>
+	  <li>oracle</li>
+	  <li>job</li>
+	</ol>
+
+	<ol type="A">
+	  <li>web</li>
+	  <li>java</li>
+	  <li>javascript server</li>
+	  <li>Database</li>
+	  <li>oracle</li>
+	  <li>job</li>
+	</ol>
+
+	<ol type="i">
+	  <li>web</li>
+	  <li>java</li>
+	  <li>javascript server</li>
+	  <li>Database</li>
+	  <li>oracle</li>
+	  <li>job</li>
+	</ol>
+
+	<ol type="I">
+	  <li>web</li>
+	  <li>java</li>
+	  <li>javascript server</li>
+	  <li>Database</li>
+	  <li>oracle</li>
+	  <li>job</li>
+	</ol>
+
+
+	<h3>목록 시작 바꾸기 - start ="<mark><b>number</b></mark>" 속성</h3>
+
+	<ol start="13">
+	  <li>web</li>
+	  <li>java</li>
+	  <li>javascript server</li>
+	  <li>Database</li>
+	  <li>oracle</li>
+	  <li>job</li>
+	</ol>
+	<h4>[Q] F로 시작하는 순서있는 목록 만들기</h4>
+
+	<ol type="A" start="6">
+	  <li>red</li>
+	  <li>green</li>
+	  <li>blue</li>
+	</ol>
+
+	<h4>[Q] v로 시작하는 순서있는 목록 만들기</h4>
+
+	<ol start="5" type="i"> 
+	  <li>html</li>
+	  <li>css</li>
+	  <li>js</li>
+	</ol>
+
+	<hr>
+	<h3>하위목록 만들기</h3>
+
+	<ul>
+	  <li>coffee
+	    <ul>
+		<li>hot</li>
+		<li>cold</li>
+	    </ul>		
+	  </li>
+	  <li>tea
+	    <ul>
+		<li>hot
+		  <ul>
+			<li>Black tea</li>
+			<li>Green tea</li>
+			<li>Herbal tea</li>
+		  </ul>
+		</li>
+		<li>cold</li>
+	    </ul>
+	  </li>
+	  <li>milk</li>
+	  <li>water</li>
+	</ul>
+
+	<h4>[Q] 하위 목록 만들기</h4>
+
+	<ul>
+	  <li>오전
+	    <ol start="5">
+		<li>교시
+		  <ol type="a">
+		    <li>Java</li>
+		    <li>Backend</li>
+		  </ol>
+		</li>
+		<li>교시</li>
+		<li>교시</li>
+		<li>교시</li>
+	    </ol>
+	  </li>
+	  <li>정오</li>
+	  <li>오후</li>
+	  <li>자정</li>
+	</ul>
+
+	<hr>
+	<h2>3. &lt;dl&gt; 정의목록</h2>
+	<dl>
+	  <dt><b>html</b></dt>
+	  <dd>Hyper Text Markup Lanuage의 약자</dd>
+	  <dd>웹페이지의 구조를 담당하는 언어</dd>
+	  <dt><b>css</b></dt>
+	  <dd>웹페이지의 디자인을 담당하는 언어</dd>
+	  <dt><b>javascript</b></dt>
+	  <dd>웹페이지의 동적인 기능을 담당하는 언어</dd>
+	</dl>
+
+	<dl>
+	  <dt><b>&lt;dl&gt;</b></dt>
+	  <dd> Description Lists </dd>
+	</dl>
+
+
+	<h4>[Q] 자신을 세가지 관점에서 정의하는 목록</h4>
+	<dl>
+	  <dt><b>황인성</b></dt>
+	  <dd>나는 과거에 공부에 흥미가 없었다.</dd>
+	  <dd>나는 현재 html을 배운다.</dd>
+	  <dd>나는 미래에 회사를 운영 할 것이다.</dd>
+	</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<a href="file:///Users/Insung/Documents/html/test02.html"><h3>Before</h3></a>
+	<a href="file:///Users/Insung/Documents/html/test04.html"><h3>Next</h3></a>
+  </body>
+</html>

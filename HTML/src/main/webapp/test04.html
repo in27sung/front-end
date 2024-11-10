@@ -1,0 +1,368 @@
+﻿<html>
+  <head>
+    <title>table</title>
+    <style type="text/css">
+	table, th, td {border:1px solid rgb(230, 126, 126);}
+    </style>
+
+  </head>
+  <body>
+	<h1>Table - 표 만들기</h1>
+	<hr>
+	<h3>2줄 2칸 Table</h3>
+	<table>
+	  <tr>
+	    <th>html</th>
+	    <th>css</th>
+	  </tr>
+	  <tr>
+	    <td>구조</td>
+	    <td>디자인</td>
+	  </tr>
+	</table>
+
+	<hr>
+	<h3> 5줄 2칸 Table</h3>
+
+<table>
+  <tr> 
+    <th>Tag</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>table</td>
+    <td>Define an HTML Table</td>
+  </tr>
+  <tr>
+    <td>tr</td>
+    <td>Table row</td>
+  </tr>
+  <tr>
+    <td>th</td>
+    <td>Table header <br> <small>bold체, 중앙정렬</small></td>
+  </tr>
+  <tr>
+    <td>td</td>
+    <td>Table data</td>
+  </tr>
+<table>
+
+
+	<hr>
+	<h3>Q. Make a table</h3>
+	<table>
+	<tr>
+	<th>id</th>
+	<th>name</th>
+	<th>date</th>
+	</tr>
+	<tr>
+	<td>abc78</td>
+	<td>이우주</td>
+	<td>30/08/2024</td>
+	</tr>
+	</table>
+
+<table>
+  <tr>
+	<th>no</th>
+	<th>name</th>
+	<th>birthday</th>
+  </tr>
+  <tr>
+	<td>01</td>
+	<td>lee he in</td>
+	<td>2000.01.01</td>
+  </tr>
+  <tr>
+	<td>02</td>
+	<td>lee su a</td>
+	<td>2000.01.02</td>
+  </tr>
+</table>
+
+<h3>가로형 표 만들기</h3>
+<table>
+  <tr>
+	<th>no</th>
+	<td>01</td>
+	<td>02</td>
+  </tr>
+  <tr>
+	<th>name</th>
+	<td>lee he in</td>
+	<td>lee su a</td>
+  </tr>
+  <tr>
+ 	<th>birthday</th>
+	<td>2000.01.01</td>
+	<td>2000.01.02</td>
+  </tr>
+</table>
+
+<h3>Q. Make a horizontal table</h3>
+
+<table>
+  <tr>
+	<th>id</th>
+	<td>ab43</td>
+	<td>bec44</td>	
+	<td>c7c9</td>
+  </tr>
+  <tr>
+	<th>name</th>
+	<td>an hi su</td>
+	<td>an ji he</td>	
+	<td>an su in</td>	
+  </tr>
+  <tr>
+	<th>date</th>
+	<td>2024/09/06</td>
+	<td>2024/09/06</td>	
+	<td>2024/09/06</td>	
+  </tr>
+</table>	
+
+
+
+
+<hr>
+<h2>cell 합치기</h2>
+
+<ol>
+	<li>colspan="n" - 가로로 n개의 칸을 하나로 합치기</li>
+	<li>rowspan="n" - 세로로 n개의 칸을 하나로 합치기</li>
+</ol>
+<h3>1. 가로로 합치기 colspan</h3>
+<table>
+  <tr>
+	<th colspan="2">수업</th>
+	<th>출결</th>
+  </tr>
+  <tr>
+	<th>오전</th>
+	<th>오후</th>
+	<th>출</th>
+  </tr>
+  <tr>
+	<th>1~4교시</th>
+	<th>5~8교시</th>
+	<th>출</th>
+  </tr>
+</table>
+
+<br>
+
+<table>
+  <tr>
+	<th colspan="2">회원</th>
+	<th colspan="2">관리자</th>
+  </tr>
+  <tr>
+	<td>김상현</td>
+	<td>박예진</td>
+	<td>이광현</td>
+	<td>장용석</td>
+  </tr>
+  <tr>
+	<td>정경수</td>
+	<td>조한수</td>
+	<td>허민</td>
+	<td>황인성</td>
+  </tr>
+  <tr>
+	<td>A-1</td>
+	<td colspan="3">A-2</td>
+  </tr>
+</table>
+
+    <table>
+        <tr>
+	<td>a</td>
+	<td colspan="2">4</td>
+	<td colspan="2">c</td>
+        </tr>
+        <tr>
+	<td>9</td>
+	<td>e</td>
+	<td>i</td>
+	<td>3</td>
+	<td>6</td>
+        </tr>
+        <tr>
+	<td colspan="2">7</td>
+	<td colspan="2">5</td>
+	<td>f</td>
+        </tr>
+        <tr>
+	<td colspan="5">f</td>
+  </tr>
+</table>
+<br>
+<table>
+  <tr>
+	<th colspan="2">name</th>
+	<th>age</th>
+  </tr>
+  <tr>
+	<td>jane</td>
+	<td>smith</td>
+	<td>24</td>
+  </tr>
+  <tr>
+	<td>eve</td>
+	<td>mark</td>
+	<td>42</td>
+        </tr>
+    </table>
+
+<h3>1. 세로로 합치기 rowspan</h3>
+
+    <table>
+        <tr>
+	<th rowspan="2">name</th>
+	<td>jane</td>
+	<td>smith</td>
+        </tr>
+        <tr>
+	<td>jane</td>
+	<td>smith</td>
+        </tr>
+</table>
+<br>
+<table>
+        <tr>
+	<td>a</td>
+	<th rowspan="2">id</th>
+        </tr>
+        <tr>
+	<td>b</td>
+        </tr>
+    </table>
+<br>
+<table>
+  <tr>
+	<th rowspan="3">web</th>
+	<td>html</td>
+  </tr>
+  <tr>
+	<td>CSS</td>
+  </tr>
+  <tr>
+	<td>JS</td>
+  </tr>
+
+</table>
+<br>
+<table>
+	<tr>
+		<th rowspan="2">오전</th>
+		<td>수업</td>
+		<th rowspan="3">과목</th>
+		<td>web</td>
+	</tr>
+	<tr>
+		<td>복습</td>
+		<td>web</td>
+	</tr>
+	<tr>
+		<th rowspan="2">오후</th>
+		<td>수업</td>
+		<td>java</td>
+	</tr>
+	<tr>
+		<td>수업</td>
+		<th>출석</th>
+		<td>20</td>
+	</tr>
+</table>
+<h3>Q. 복합 칸 합치기</h3>
+<table>
+	<tr>
+		<th colspan="4">아이티윌 게스트하우스 예약 안내</th>
+	</tr>
+	<tr>
+		<th>방 이름</th>
+		<th>대상</th>
+		<th>크기</th>
+		<th>가격</th>
+	</tr>
+	<tr>
+		<th>유채방</th>
+		<td>여성 도미토리</td>
+		<td rowspan="3">4인실</td>
+		<td rowspan="4">1인 20,000원</td>
+	</tr>
+	<tr>
+		<th rowspan="2">동백방</th>
+		<td>남성 도미토리</td>
+	</tr>
+	<tr>
+		<td>가족 1팀</td>
+	</tr>
+	<tr>
+		<th colspan="2">전혜향방</th>
+		<td>2인실</td>
+	</tr>
+	<tr>
+		<td colspan="4"><b>바깥채 단독: 전화문의</b> (010-777-5454)</td>
+	</tr>
+</table>
+<br>
+<table>
+	<tr>
+		<th colspan="6">자바 개발자반</th>
+	</tr>
+	<tr>
+		<th colspan="2">오라클</th>
+		<th colspan="2">웹표전 UI</th>
+		<th colspan="2">Application</th>
+	</tr>
+	<tr>
+		<td rowspan="4">1교시<br>~<br>4교시</td>
+		<td rowspan="4"><b>특강</b><br><small>강사</small><br>홍길동</td>
+		<td colspan="2">1교시</td>
+		<td colspan="2">1교시</td>
+	</tr>
+	<tr>
+		<td colspan="2">2교시</td>
+		<td colspan="2">2교시</td>
+	</tr>
+	<tr>
+		<td colspan="2">3교시</td>
+		<td colspan="2">3교시</td>
+	</tr>
+	<tr>
+		<td colspan="2">4교시</td>
+		<td colspan="2">4교시</td>
+	</tr>
+	<tr>
+		<td colspan="2">5교시</td>
+		<td rowspan="4">5교시<br>~<br>8교시<br></td>
+		<td rowspan="4"><b>특강</b><br><small>강사</small><br>홍길순</b></td>
+		<td colspan="2">5교시</td>
+	</tr>
+	<tr>
+		<td colspan="2">6교시</td>
+		<td colspan="2">6교시</td>
+	</tr>
+	<tr>
+		<td colspan="2">7교시</td>
+		<td rowspan="2">7교시<br>~<br>8교시</td>
+		<td rowspan="2"><b>특강</b><br><small>강사</small><br>김갑을</td>
+	</tr>
+	<tr>
+		<td colspan="2">8교시</td>
+	</tr>
+	
+</table>
+
+
+
+
+
+
+	<a href="/Users/Insung/Documents/html/test03.html"><h3>Before</h3></a>
+	<a href="/Users/Insung/Documents/html/test05.html"><h3>Next</h3></a>
+  </body>
+</html>

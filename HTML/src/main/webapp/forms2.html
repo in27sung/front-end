@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms2</title>
+</head>
+<body>
+    <nav>
+        <a href="forms.html">form1</a>
+        <a href="forms2.html">form2</a>
+        <hr>
+        <h1>form2 (html5 input 요소들)</h1>
+        <hr>
+    </nav>
+    <form action="test.jsp" method="post"> 
+        <h2>1. input type="time" - 시간 (hour:min am/pm)을 지정하는 요소</h2>
+        <p>  
+            <label> 팀 회의 시간: <input type="time" size="25"></label> 
+        </p>
+
+        <h2>2. input type="date" - 날짜를 지정하는 요소 </h2>
+        <p> 최소값은 min="nnnn-nn-nn"로 지정하고 최대값은 max="nnnn-nn-nn"로 지정<br>
+            <label>1차 팀 프로젝트 날짜: <input type="date" min="2024-09-27" max="2025-02-20"></label>
+        </p>
+
+        <h2>3. input type="datetime-local" - 날짜와 시간을 지정하는 요소</h2>
+        <p> 
+           <label> 2차 팀 회의날짜: <input type="datetime-local"> </label>
+        </p>
+
+        <h2>4. input type="week" - 주단위의 날짜를 지정하는 요소</h2>
+        <p> 
+            <label>Week: <input type="week"></label>
+        </p>
+
+        <h2>5. input type="month" - </h2>
+        <p> 
+          <label> Month:<input type="month"></label>
+        </p>
+
+        <h2>6. input type="number" - 숫자값을 지정하는 요소 </h2>
+        <p> 최소값은 min=" "로 최대값은 max=" "로 지정, 증감 간격은 step=" " <br>
+            <label> Numbers:<input type="number" min="0" max="50" step="5">명</label>
+        </p>
+
+        <h2>7. input type="range" - 범위 내의 값을 지정하는 요소</h2>
+        <p> <br>
+            <label><input type="range" min="0" max="10"></label>
+        </p>
+
+        <h2>8. input type="tel" - 연락처(전화번호)를 지정하는 요소</h2>
+        <p> <br>
+            <label>num:<input type="tel"></label>
+        </p>
+
+        <h2>9. input type="email" - 연락처(이메일)를 지정하는 요소</h2>
+        <p> 이메일형식이 올바른지 확인 <br>
+            모바일브라우저에서 가상키패드나 @나 .com이 나타날 수 있음. <br>
+           <label>email:<input type="email" placeholder="example@insung.com"> </label>
+        </p>
+
+        <h2>10. input type="url" - 웹주소를 지정하는 요소</h2>
+        <p> <br>
+           <label>blog:<input type="url" placeholder="http://example.com"></label> 
+           
+           <input type="submit" value="전송">
+        </p>
+        <h2>11. input type="color" - 색상 값을 지정하는 요소 </h2>
+        <p> <br>
+           <label>colour:<input type="color"></label> 
+           
+           <input type="submit" value="전송">
+        </p>
+        <br><br>
+        <hr>
+        <h2>html 속성들 </h2>
+        <h3>1. Autofocus (autofocus="autofocus")</h3>
+        <input type="text" autofocus>
+
+        <h3>2. Required (required="required")</h3>
+        <input type="text" required>
+
+        <h3>3. 입력란의 설명 또는 예시</h3>
+        <label for="phone">핸드폰번호</label> <input type="tel" id="phone" placeholder="010-xxxx-xxxx">
+
+        <h3>4. Autocomplete="on/off" - 자동완성기능을 켬/끔</h3>
+        <label for="id">Id</label> <input type="text" id="id" autocomplete="on">
+
+        <h3>5. Readonly - 읽기만 가능 (값이 전송 됨)</h3>
+        <input type="text" value="읽기 전용" readonly>
+
+        <h3>6. - 사용불가능한 요소로 지정 (값 전송 x)</h3>
+        <input type="text" value="수정 불가" disabled>
+
+        <hr>
+        <h2>fieldset... /fieldset - 폼요소들을 그룹화</h2>
+        <p>서로 연관된 폼요소들을 묶어서 그룹화하여 나타냄,
+        해당 fieldset의 제목은 legend로 지정</p>
+        <fieldset>
+            <legend> log-in </legend>
+            <label>ID <input type="text"></label> <br>
+            <label>Paaword <input type="password"></label>
+        </fieldset>
+
+        <hr>
+        <input type="submit"><input type="reset">
+
+    </form>
+</body>
+</html>

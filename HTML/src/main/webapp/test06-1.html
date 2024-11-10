@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. a tag로 링크 걸기</title>
+</head>
+<body>
+    <nav>
+        <a href="test06.html">링크수업1</a>
+        <a href="test06.html#targetlink">링크수업1(target)</a>
+        <a href="test06-1.html">링크수업2</a>
+    </nav>
+    <hr>
+    <h1>test06-1.html</h1>
+
+    <hr>
+    <h1>2. a로 내부링크 걸기</h1>
+    <p>(스크롤이 생긴 건) 페이지의 특정 부분으로 한번에 이동하는 링크.
+    도착할 특정 영역에 주소로 사용할 것이 필요.
+    중복된 값이 허용 불가한 id를 태그에 추가함.(영어 문자로 시작)
+    * 다른 페이지의 특정 부분으로 이동은 <b>"abc.html#def"</b>형식으로 지정.
+    </p>
+    <pre>
+        &lt;a href="#id값"&gt; text &lt;/a&gt;
+        ...
+
+        &lt;tag id="id 값"&gt;
+    </pre>
+    a href="주소(경로)" /a
+    <hr>
+    <h3 style="color: brown;" id="menu">하위 목록</h3>
+    <nav>
+        <ul>
+        <li><a href="#photo-01">photo-01</a></li>
+        <li><a href="#photo-02">photo-02</a></li>
+        <li><a href="#photo-03">photo-03</a></li>
+        <li><a href="#photo-04">photo-04</a></li>
+        <li><a href="#photo-05">photo-05</a></li>
+        <li><a href="#photo-06">photo-06</a></li>
+        <li><a href="#photo-07">photo-07</a></li>
+        <li><a href="#photo-08">photo-08</a></li>
+        <li><a href="#photo-09">photo-09</a></li>
+        <li><a href="#photo-10">photo-10</a></li>
+    </ul>
+    </nav>
+    <pre>
+    &lt;a hreft="<i>#def</i>"&gt; def &lt;/a&gt;   ----- 클릭하면 내려감 
+    ...
+    &lt;tag <i>id="abc</i>"&gt;
+    ...
+    
+    
+    &lt;a hreft="<i>#abc</i>"&gt; def &lt;/a&gt;   ----- 클릭하면 올라감 
+    ...
+    &lt;tag <i>id="def</i>"&gt;
+    ...
+    </pre>
+    <hr id="photo-01">
+    <h2>[photo-01]</h2>
+    <img src="img/bird-8058620_640.jpg" alt="bird" height="500"><br>
+    <a href="#menu">Go menu</a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr id="photo-02">
+    <h2>[photo-02]</h2>
+    <img src="img/building-7014904_640.jpg" alt="building" height="500"><br>
+    <a href="#menu">Go menu</a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr id="photo-03">
+    <h2>[photo-03]</h2>
+    <img src="img/car-7275386_640.jpg" alt="car" height="500"><br>
+    <a href="#menu">Go menu</a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr id="photo-04">
+    <h2>[photo-04]</h2>
+    <img src="img/pexels-ethan-brooke-1123775-2376712.jpg" alt="ethan" height="500"><br>
+    <a href="#menu">Go menu</a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr id="photo-05">
+    <h2>[photo-05]</h2>
+    <img src="img/farmer-7441759_640.jpg" alt="farmer" height="500"><br>    
+    <a href="#menu">Go menu</a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr id="photo-06">
+    <h2>[photo-06]</h2>
+    <img src="img/mountains-8585535_640.jpg" alt="moutains" height="500"><br>
+    <a href="#menu">Go menu</a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr id="photo-07">
+    <h2>[photo-07]</h2>
+    <img src="img/pexels-agoston-fung-1165130-2227942.jpg" alt="agoston" height="500"><br>
+    <a href="#menu">Go menu</a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr id="photo-08">
+    <h2>[photo-08]</h2>
+    <img src="img/pexels-tima-miroshnichenko-6755051.jpg" alt="tima" height="500"><br>
+    <a href="#menu">Go menu</a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr id="photo-09">
+    <h2>[photo-09]</h2>
+    <img src="img/bird-8058620_640.jpg" alt="bird" height="500"><br>
+    <a href="#menu">Go menu</a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr id="photo-10">
+    <h2>[photo-10]</h2>
+    <img src="img/bird-8058620_640.jpg" alt="bird" height="500"><br>
+    <a href="#menu">Go menu</a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr>
+
+    <a href="#">Top</a>
+
+</body>
+</html>
