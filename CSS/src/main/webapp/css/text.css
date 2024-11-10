@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/* 그룹선택자(A, B, C, ...)는 
+여러 선택자들을 동시에 불러와서 적용*/
+.ta01, .ta02, .ta03 {
+	border: 1px solid #900;
+	width: 500px;
+ }
+
+.ta01 {text-align: left;}
+.ta02 {text-align: center;}
+.ta03 {text-align: right;}
+.ta04 {text-align: justify;}
+
+/* 2. text-decoratino: ; 글자의 줄들 */
+
+.td01 {text-decoration: overline;}
+.td02 {text-decoration: line-through;}
+.td03 {text-decoration: underline;}
+.td04 {text-decoration: none;}
+
+/* 상태선택자(A:hover)는 A에 마우스오버일때만 적용*/
+.td04:hover {
+	background-color:#ac9;
+	text-decoration: underline;
+}
+
+/* 3. text-indent: ; 들여쓰기*/
+.ti01 {text-indent: 10px;}
+.ti02 {text-indent: 2em;}
+.ti03 {text-indent: 10%;}
+.ti04 {text-indent: -100px;}
+
+.ti04:hover {
+	text-indent: 0;
+}
+
+.ti05 {text-indent: 20%;}
+
+/* 4. text-transform: ; 영문 대소문자 변경*/
+.tt01 {text-transform: lowercase;}
+.tt02 {text-transform: uppercase;}
+.tt03 {text-transform: capitalize;}
+.tt04 {text-transform: none;}
+
+

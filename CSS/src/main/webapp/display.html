@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>display</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/display.css">
+</head>
+<body>
+	<h1>display</h1>
+	<nav>
+		<ul>
+			<li><a href="#sec01">section-01</a></li>
+			<li><a href="#sec02">section-02</a></li>
+			<li><a href="#sec03">section-03</a></li>
+			<li><a href="#sec04">section-04</a></li>
+		</ul>
+	</nav>
+	<ul>
+		<li>display:inline; 한 줄에 나란히 옴. <br> 크기 적용 불가, 상하 margin적용
+			불가
+		</li>
+		<li>display:block; 한 줄에 나란히 올 수 없음. <br> 크기(width/height),
+			margin 적용 됨
+		</li>
+		<li>display:inline-block;</li>
+		<li>display:none; 화면에서 사라짐</li>
+	</ul>
+
+	<section id="sec01">
+		<h2>1. display:inline;</h2>
+
+		<a class="in">a tag</a> <b class="in">b tag</b> <label class="in">label
+			tag</label> <span class="in">span tag</span> <input class="in" type="text"
+			placeholder="(예외):크기 조절가능">
+	</section>
+
+	<section id="sec02">
+		<h2>2. display:block;</h2>
+
+		<p class="bl">p tag</p>
+		<aside class="bl">aside tag</aside>
+		<h4 class="bl">h4 tag</h4>
+		<div class="bl">div tag</div>
+	</section>
+
+	<section id="sec03">
+		<h2>3. display:block;</h2>
+
+		<a class="in">a tag</a> <b class="in">b tag</b> <label class="in">label
+			tag</label> <span class="in">span tag</span> <input class="in" type="text"
+			placeholder="(예외):크기 조절가능">
+		<p class="bl">p tag</p>
+		<aside class="bl">aside tag</aside>
+		<h4 class="bl">h4 tag</h4>
+		<div class="bl">div tag</div>
+
+	</section>
+	<div id="div04">
+	<section id="sec04">
+		<h2>4. display:none; 요소와 공간이 사라짐</h2>
+
+		<a class="in">a tag</a> <b class="in">b tag</b> <label class="in">label
+			tag</label> <span class="in">span tag</span> <input class="in" type="text"
+			placeholder="(예외):크기 조절가능">
+		<p class="bl">p tag</p>
+		<aside class="bl">aside tag</aside>
+		<h4 class="bl">h4 tag</h4>
+		<div class="bl">div tag</div>
+
+	</section>
+	
+	<section id="sec04-1">
+		<h2>5. display:visibility; 요소만 사라짐</h2>
+		<a class="in">a tag</a> <b class="in">b tag</b> <label class="in">label
+		tag</label> <span class="in">span tag</span> <input class="in" type="text"
+		placeholder="(예외):크기 조절가능">
+		<p class="bl">p tag</p>
+		<aside class="bl">aside tag</aside>
+		<h4 class="bl">h4 tag</h4>
+		<div class="bl">div tag</div>
+	</section>
+	</div>
+</body>
+</html>

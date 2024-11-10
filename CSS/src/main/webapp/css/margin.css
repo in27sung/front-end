@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/* 1. margin의 방향별 지정법 */
+li {
+	border: 1px solid;
+}
+
+.mt {
+	margin-top: 50px;
+}
+
+.mr {
+	margin-right: 50px;
+	text-align: right;
+}
+
+.mb {
+	margin-bottom: 50px;
+}
+
+.ml {
+	margin-left: 50px;
+}
+
+/* 2. margin의 값 갯수별 지정법 */
+.m01 {
+	margin: 4em;
+}
+
+.m02 {
+	margin: 2em 4em;
+}
+
+.m03 {
+	margin: 2em 4em 1em;
+}
+
+.m04 {
+	margin: 2em 10% 50px 15%;
+}
+
+fieldset {
+	width: 500px;
+	/* 	margin-left: auto; */
+	/* 	margin-right: auto; */
+	margin: 5em auto;
+}
+
+#pcnt {
+	margin: 400px;
+	padding: auto;
+	font-size: 1em;
+}
+/* in-line 요소  */
+/* block 요소  */
+label { /*background-color: #ccc;*/
+	width: 150px;
+}
+
+button {
+	margin-left: 76px;
+}
+
+.la01 { /*margin-laft:40px; */
+	margin-right: 54px;
+}
+
+#pg-list {
+	text-align: center;
+	line-height: 2.5;
+}
+
+#pg-list>a { /* 1. (부모자식)관계선택자 A>B는 
+상위요소 A의 바로 아래에 
+있는 하위요소 B를 지정
+1. (조상자손)관계선택자 A B는 
+상위요소 A의 바로 아래에 
+있는 모든 하위요소 B를 지정
+
+*/
+	background-color: #ccc;
+	padding: 0.5em 0.8em;
+	margin-right: 0.5em;
+	text-decoration: none;
+}
+
+#pg-list>a:hover {
+	background-color: #09c;
+	color: #ccc;
+}
+
+#pg-list>span {
+	padding-right: 100px;
+	color: #045;
+}

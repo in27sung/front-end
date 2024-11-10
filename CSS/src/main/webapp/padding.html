@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>padding</title>
+<link href="style.css" rel="stylesheet">
+<link href="padding.css" rel="stylesheet">
+</head>
+<body>
+	<h1>padding 요소의 내부 여백</h1>
+	<nav>
+	<a href="layout.html">layout.html</a>
+	<a href="basic.html">basic.html</a>
+	<a href="font.html">font.html</a>
+	<a href="text.html">text.html</a>
+	<a href="boxModel.html">boxModel.html</a>
+	<a href="padding.html">padding.html</a>
+	<a href="margin.html">margin.html</a>
+	</nav>
+	
+	<h2>1. padding의 방향별 지정</h2>
+	<ul>
+		<li class="pt">padding-top: 30px;</li>
+		<li class="pr">padding-right: 40px;</li>
+		<li class="pb">padding-bottom: 50px;</li>
+		<li class="pl">padding-left: 60px;</li>
+	</ul>
+	
+	<h2>2. padding의 값 갯수별 지정법</h2>
+	<ul>
+		<li class="p01">padding:n 사방;</li>
+		<li class="p02">padding:n n: 세로 가로;</li>
+		<li class="p03">padding:n n n;: 상 좌우 아래쪽</li>
+		<li class="p04">padding:n n n n;: 위 오른쪽 밑에 왼쪽</li>
+	</ul>
+	
+	<form action="test.jsp" method="post">
+	<fieldset>
+	<legend>sign in</legend>
+	<label for="id" class="la01">id</label> 
+	<input type="text" id="id" placeholder="ID"><br>
+	<label for="pwd">password</label> 
+	<input type="password" id="pwd" placeholder="Password">
+	<hr>
+	<button>sign in</button>
+	</fieldset>
+	</form>
+	
+	<p id="photo">
+	<img src="img/building-7014904_640.jpg" class="pic01" alt="bridge">
+	<img src="img/building-7014904_640.jpg" class="pic02" alt="bridge">
+	<img src="img/building-7014904_640.jpg" class="pic03" alt="bridge">
+	</p>
+	
+	<p id="pg-list">
+		<a href="">1</a>
+		<a href="">2</a>
+		<a href="">3</a>
+		<a href="">4</a>
+		<a href="">5</a>
+		<a href="">6</a>
+		<a href="">7</a>
+		<a href="">8</a>
+		<a href="">9</a>
+		<a href="">10</a>
+	</p>
+	
+</body>
+</html>

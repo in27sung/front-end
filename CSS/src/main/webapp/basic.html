@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS Basic</title>
+<link href="basic.css" rel="stylesheet">
+<style type="text/css">
+h1 {
+	color: #009;
+	text-transform: capitalize;
+}
+
+h2 {
+	color: #00d;
+}
+
+ul {
+	padding: 2em;
+}
+
+li {
+	margin-bottom: 1.2em;
+}
+
+#ul01 {
+	background-color: #9ef;
+}
+
+#ul02 {
+	background-color: #9fe;
+}
+
+#in {
+	color: #005;
+	background-color: #fff;
+}
+
+.brw {
+	color: #930;
+}
+
+.bg-y {
+	background-color: #ff0;
+}
+
+.bg-g {
+	background-color: #6fd;
+}
+
+.bg-y {
+	background-color: #ff0;
+}
+
+.bg-r {
+	background-color: #f55;
+}
+</style>
+</head>
+<body>
+	<h1>css basic</h1>
+	<hr>
+	<nav>
+	<a href="layout.html">layout.html</a>
+	<a href="basic.html">basic.html</a>
+	<a href="font.html">font.html</a>
+	</nav>
+	<hr>
+	<p>선택자 {속성:속성값;}</p>
+
+	<h2>css 선택자 대표 3가지</h2>
+	<ul id="ul01">
+		<li><b class="brw bg-y">tag 선택자</b> - 속성이 같은 모든 태그에 적용되므로 각각의
+			태그마다 다르게 설정 불가</li>
+		<li><b class="brw bg-g">id 선택자</b> - 태그에 id를 추가하고 id값을 선택자로
+			활용(#id값). - 중복 적용 불가(구조적 용도)</li>
+		<li><b class="brw bg-r">class 선택자</b> - 태그에 class를 추가하고 class 값을
+			선택자로 활용(.class값). - 중복 적용, 조합 가능(디자인 용도)</li>
+	</ul>
+
+	<h2>cSS 적용방식 3가지</h2>
+	<ul id="ul02">
+		<li id="ex">외부 CSS - 스타일 소스가 별개의 문서로 존재(*.css)하고 html문서의 head에 연결시켜 적용. <br>
+		(link href="*.css" rel="stylesheet") <br>
+			여러 페이지에 동시에 적용하고 수정 가능. <br> 
+			유지보수에 유리. <br>
+			통일성 있는 디자인 가능. <br>
+		</li>
+		<li id="in">내부 CSS - html파일 head 내부에 style tag로 css소스를 적용 <br> 해당
+			페이지에만 적용 됨
+		</li>
+		<li style="color: #f00; background-color: #fff;">인라인 CSS - 본문
+			html file 태그 뒤에 style="속성:속성값;" 방식으로 작성 <br> 소스가 길어지고 유지보수에 불리, 통일성 불가
+		</li>
+	</ul>
+
+
+</body>
+</html>

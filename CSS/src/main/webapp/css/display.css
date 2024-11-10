@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+/* nav */
+nav {
+	background-color: #132;
+	padding: 6px;
+	/*width: 800px;*/
+	margin: auto;
+}
+
+nav>ul {
+	/*border: 1px solid red;*/
+	padding: 0; /* 목록 앞의 기본 여백 제거*/
+	text-align: center;
+	
+}
+/* nav>ul>li */
+nav li {
+	/*border: 1px solid red;*/
+	background-color: #3ac;
+	display: inline-block; /* 메뉴들을 가로로 배치*/
+	width: 150px;
+	height: 30px;
+}
+
+nav li:hover {
+	background-color: #ca4c49;
+} 
+
+nav a {
+	width: 150px; height: 30px;
+	display: block; /* 크기 적용 가능 */
+	text-decoration: none;
+	text-transform: capitalize;
+	text-align: center;
+	line-height: 30px; /* 행간= 높이값으로 수직 중앙정렬*/
+}
+/* 1.평상시 */
+nav a:link, nav a:visited {
+	/*(초기링크, 방문한 링크)*/
+	color:#fff;
+}
+
+/* 2.동작시 */
+nav a:hover {
+	/*(마우스오버시, 활성화링크)*/
+	color:#312dc7;
+}
+
+nav a:active {
+	/*(활성화링크= 누르는 동안)*/
+	color:black;
+}
+
+nav a:hover {
+	font-weight: bold;
+}
+/* 1. display: inline */
+#sec01>.in {
+	border: 1px solid;
+	width: 200px;
+	height: 50px;
+	margin: 30px;
+	/* 	display: block; */
+}
+
+#sec01:hover>.in {
+	border: 1px solid #900;
+	display: block;
+}
+
+#sec02>.bl {
+	border: 1px solid;
+	width: 150px;
+	height: 50px;
+	margin: 30px;
+}
+
+#sec02:hover>.bl {
+	border: 1px solid #009;
+	display: inline;
+}
+
+/* #sec03>.in, #sec03>.bl {
+	border: 1px solid #090;
+} */
+/* * {
+	color: #f00;
+	margin: 0;
+	padding: 0;
+} */
+#sec03>*:not(h2) { /*1. 전체선택자 *는 
+말 그대로 모든 요소를 지정하는 선택자임.
+2. 부정 선택자 A:not(B)는 
+B를 제외한 A를 지정하는 선택자임.*/
+	border: 1px solid #090;
+	width: 150px;
+	height: 50px;
+	margin: 30px;
+	display: inline-block;
+}
+
+/* 4. display:none; */
+#sec04, #sec04-1{
+	width: 45%;
+	display:inline-block;
+	vertical-align: middle; /* 한 줄에 나란히 온 
+	높이 값이 다른 요소들끼리의 수직 정렬*/
+}
+
+#sec04>label.in {
+	background-color: #d4a;
+	display:none;
+}
+
+#sec04>h4.bl {
+	background-color: #da7;
+	display:none;
+}
+
+#sec04:hover>label.in, #sec04:hover>h4.bl {
+	display:inline-block;
+}
+
+/* 4-1. display:visibility */
+#sec04-1>label.in {
+	background-color: #d7a;
+	visibility: hidden;
+}
+#sec04-1:hover>label.in, #sec04-1:hover>h4.bl {
+	visibility: visible;
+}
+
+#sec04-1>h4.bl {
+	background-color: #da7;
+	visibility: hidden;
+}
+
+#div04 {
+	text-align: center;
+}
+

@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+/* *{margin: 0; padding: 0;} */
+
+.nav01 {
+}
+
+nav>ul {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 1%;
+}
+
+nav li {
+/* 	border: 1px solid red; */
+	border-left: 10px solid #a7620a;
+	background-color: orange;
+	float: left;
+	padding: 10px 0px;
+	margin-bottom: 4px;
+}
+
+#nav01 li:hover {
+	background-color: #f28800;
+}
+
+nav a {
+/* 	border: 1px solid; */
+	text-decoration: none;
+	text-transform: capitalize;
+	font-weight: bold;
+	padding: 10px 30px;
+}
+
+/* hover: 마우스 올렸을 때 효과 */
+/* hover: 마우스 올렸을 때 효과 */
+nav a:link, nav a:visited{color:#bd28de;}
+/* hover: 마우스 올렸을 때 효과 */
+/* hover:  */
+nav a:hover, nav a:active {color:#a7620a;}
+
+/* uav02 */
+#nav02>ul {/* border: 1px solid; */
+float: right;}
+#nav02 li {float: left;}
+
+#ul01 {
+	padding-left: 0; /* 목록 앞의 기본 여백 제거*/
+	list-style: none; /* 목록 앞의 기본모양 제거*/
+}
+
+#sec01, #sec02 {
+	overflow: hidden; /* float으로 빠져나간 하위요소의 영향으로 
+	줄어든 상위요소의 크기를 회복*/
+	clear: both; /* floast의 영향으로 
+	밀고 올라온 요소를 원위치로*/
+	width: 45%;
+	display: inline-block;
+}
+
+.clear {
+	clear: both;
+}
+
+#sec01>p>img /* #sec01 img */ {
+	float: left;
+	margin-right: 1em;
+}
+
+#sec02>p {
+	text-align: right;
+}
+
+#sec02 img {
+	float: right;
+	margin-left: 1em;
+}
+
+.fl, .fr {
+	color: black;
+	padding: 1.2em;
+	margin-bottom: 3em;
+}
+
+.fl {
+	background-color: blue;
+	font-size: 20px;
+	float: left;
+}
+
+.fr {
+	background-color: red;
+	font-size: 20px;
+	float: right;
+}
+
+#sec03>p {
+	border: 1px solid red;
+}
+
+.p01 {
+	width: 45%;
+	float: left;
+}
+
+.p02 {
+	width: 45%;
+	float: right
+}
+
+.p03 {
+	overflow: hidden;
+	clear: both;
+}
+
+.p04, .p05, .p06 {
+	width: 33%;
+	display: inline-block;
+}
+
+.p07 {
+	border: 3px solid #007 !important;
+	/* css적용 순위를 가장 우선으로 지정*/
+	clear: both;
+}
+
+#sec04 {
+	overflow: hidden;
+}
+
+.p11 {
+	float: left;
+	width: 24%;
+}
+
+.p12 {
+	float: right;
+	width: 24%;
+}
+
+.p14, .p15, .p16, .p17 {
+	width: 22%;
+	float: left;
+	margin-left: 2.5%;
+}
