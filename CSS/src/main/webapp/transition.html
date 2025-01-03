@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="css/style.css" rel="stylesheet">
+<link href="css/transition.css" rel="stylesheet">
+</head>
+<body>
+	<h1> transition 단순한 애니메이션 효과</h1>
+	<div id="css">css</div>
+	<ul>
+		<li>transition-property: ; 적용할 속성</li>
+		<li>transition-duration: ; 진행 시간(필수)</li>
+		<li>transition-delay: ; 지연</li>
+		<li>transition-timing-finction: ; 가속 감속 등
+			<ul>
+				<li>ease 기본값. 천천히 시작해서 느리게 끝남</li>
+				<li>ease-in 점점 빠르게(가속)</li>
+				<li>ease-out 점점 느리게(감속)</li>
+				<li>ease-in-out 시작과 끝을 같이 느리게</li>
+				<li>linear 등속</li>
+				<li>cubic-bezier(n,n,n,n) 베지에곡선값으로 직접 지정</li>
+				<a href="https://cubic-bezier.com/" target="_blank">
+				베지에 곡선
+				</a>
+			</ul>
+		</li>
+	</ul>
+	
+<section id="sec01">
+	<h2>1. transition-property:; 적용할 속성</h2>
+	
+	<p class="pr01">ball-01</p>
+	<p class="pr02">ball-02</p>
+	<p class="pr03">ball-03</p>
+	<p class="pr04">ball-04</p>
+</section>
+
+<section id="sec02">
+	<h2>2. transition-delay:; 지연 시간</h2>
+	
+	<p class="b01">b</p>
+	<p class="b02">a</p>
+	<p class="b03">l</p>
+	<p class="b04">l</p>
+</section>
+
+<section id="sec03">
+	<h2>3. transition-timing-function:; 가속 감속</h2>
+	
+	<p class="tm01">ease</p>
+	<p class="tm02">ease-in</p>
+	<p class="tm03">ease-out</p>
+	<p class="tm04">ease-in-out</p>
+	<p class="tm05">linear</p>
+	<p class="tm06">cubic-bezier</p>
+	<p class="tm07">cubic-bezier</p>
+</section>
+</body>
+</html>

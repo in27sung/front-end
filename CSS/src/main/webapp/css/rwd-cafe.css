@@ -1,0 +1,166 @@
+@charset "UTF-8";
+* {margin: 0; padding: 0; /* 초기화(여백) */ }
+
+/*
+ .nanum-gothic-regular {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jua-regular {
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ */
+ 
+body {font-family: "Nanum Gothic", sans-serif;}
+
+a {text-decoration: none /* 링크 밑줄 제거  */;}
+
+nav a:link, nav a:visited {/* 링크 평상시 */
+ color: #fff; }
+nav a:hover, nav a:active {/* 링크 동작시 */
+ color: #ff0; }	
+
+h2 {font-size: 1.8em;
+font-family: "Jua", sans-serif !important;}
+h3 {font-size: 1.3em;}
+p {font-size: 1.3em;
+ line-height: 2.5 /* 행간(줄간격) */;}
+li {font-size: 1em;
+ line-height: 2;}
+
+
+    /* 모바일 퍼스트 */
+#wrap {/* border: 1px solid red;  */
+ margin: 0 auto;}
+
+header {background-image: url("/img/header.jpg");
+background-size:cover /* 이미지 하나로 다덮기 */;
+background-position: center center /* 중심에 맞춤 */;
+height: 300px;}
+
+nav {background-color: #000;
+height: 50px;}
+nav ul {/* border: 1px solid #00f; */
+ list-style: none /* 목록 앞의 기본모양 제거 */;
+ padding: 10px;} 
+nav li {/* border: 1px solid red;  */
+display: inline-block /* 메뉴들을 가로로 배치 */;
+margin: 5px 15px;
+font-size: 0.8em;
+/* font-family: ; */}
+
+section {padding: 15px 5% 10px 5%;
+position: relative;}
+
+section:nth-of-type(2n) {
+ /* 짝수번째 내용 */	
+	background-color: #eee;} 
+ 
+.pg-title {
+padding:30px 50px;
+position: absolute;
+top:20px; left: 0;}
+
+.content { width: 90%;
+ margin:80px auto 10px;
+ padding: 20px;
+ box-sizing: border-box
+ /* border까지를 요소의 크기로 계산하는 방식
+ (padding도 포함 됨) */;
+}
+
+.text>h3 {color: #0094ff;
+margin-bottom: 20px;}
+
+.photo {display: none /* 모바일~테블릿까지
+이미지 영역을 숨김 */;}
+
+footer {background-color: #000;
+height:100px;
+color: #fff;}
+
+footer>p {text-align: center;
+line-height:100px; 
+font-size: 2em;
+font-family: "Jua", sans-serif;}
+
+
+     /* tablet - 768px이상 */
+@media screen and (min-width:768px) {
+
+header {height: 400px;}	
+	
+#intro, #map {border: 1px dotted #ccc; 
+width: 50%; height:400px;
+float: left;
+box-sizing: border-box;}	
+
+#choice {clear: both;}	
+}
+
+    /* pc - 992px이상 */
+@media screen and (min-width:992px) {
+ #wrap {border: 1px solid #ccc; 
+  width: 995px;}
+	
+ header {height: 500px;}
+ 
+ section {height: 420px;}	
+ 
+ #intro, #map {width: 100%;	}
+ 	
+.photo {display: block;
+margin-right: 5%;}	
+
+.photo>img {width: 100%;
+max-width: 320px;}
+
+.photo, .text {/* border: 1px solid #f00; */
+float: left;
+width: 42%;}
+
+#choice .photo, #choice .text {
+	float: right;
+	margin-left:5%; 
+}
+#choice .photo {border-radius: 50%;
+ overflow: hidden;}
+
+footer {clear: both;}	 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

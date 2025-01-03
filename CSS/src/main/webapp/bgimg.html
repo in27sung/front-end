@@ -8,31 +8,117 @@
 </head>
 <body>
 	<h1>background 요소의 배경</h1>
-	
+
 	<ul>
 		<li>background-color:; 배경색상</li>
 		<li>background-image:url("이미지경로"); 배경이미지</li>
 	</ul>
-	
+
 	<h2>background-image의 하위속성들</h2>
 	<ul>
-	 <li>background-repreat:; 반복 지정
-	  <ul>
-		<li>repeat (기본값) 양사방 반복</li>	  
-		<li>repeat-x 가로 반복</li>	  
-		<li>repeat-y 세로 반복</li>	  
-		<li>no-repeat 반복 없음</li>	  
-	  </ul>
-	 </li>
-	 <li>background-position:; 위치 지정
-	  <ul>
-	   <li>Xn Yn;</li>
-	   <li>left/center/right top/center/bottom</li>
-	  </ul>
-	 </li>
-	 <li>background-size:; 크기 지정</li>
-	 <li>background-attachment:; 스크롤여부 지정</li>
+		<li>background-repreat:; 반복 지정
+			<ul>
+				<li>repeat (기본값) 양사방 반복</li>
+				<li>repeat-x 가로 반복</li>
+				<li>repeat-y 세로 반복</li>
+				<li>no-repeat 반복 없음</li>
+			</ul>
+		</li>
+		<li>background-position:; 위치 지정
+			<ul>
+				<li>Xn Yn;</li>
+				<li>left/center/right top/center/bottom</li>
+			</ul>
+		</li>
+		<li>background-size:; 크기 지정
+			<ul>
+				<li>Xn Yn; 가로 세로 크기를 직접 지정</li>
+				<li>contain; 그림 하나가 온전히 나옴(그림 우선)</li>
+				<li>cover; 이미지 하나로 영역 전체를 다 덮음</li>
+			</ul>
+		</li>
+		<li>background-attachment:; 스크롤여부 지정
+			<ul>
+				<li>scroll - 영역 스크롤바에는 고정 / 브라우저 스크롤바에는 스크롤 됨</li>
+				<li>fixed - 영역 스크롤바와 브라우저 스크롤바에 모두 고정</li>
+				<li>local (특정영역에서)...</li>
+			</ul>
+		</li>
 	</ul>
-	
+
+	<section id="sec01">
+		<h2>background-attachment:; 배경이미지의 스크롤 여부</h2>
+
+		<p class="sc">
+			<b>background-attachement:scroll;</b>
+			<br>
+			<br>
+			<br> 
+			New Zealand's parliament was
+			brought to a temporary halt by MPs performing a haka, amid anger over
+			a controversial bill seeking to reinterpret the country's founding
+			treaty with Māori people. Opposition party MP Hana-Rawhiti
+			Maipi-Clarke began the traditional ceremonial group dance after being
+			asked whether her party supported the bill, which faced its first
+			vote on Thursday. At the same time, a hīkoi - or peaceful protest
+			march - organised by a Māori rights group is continuing to make its
+			way towards the capital, Wellington. Thousands have already joined
+			the 10-day march against the bill, which reached Auckland on
+			Wednesday, having begun in the far north of New Zealand on Monday. 
+			<b>background-attachement:fixed;</b>
+			<br>
+			<br>
+			<br>
+		</p>
+
+		<p class="fx">
+			<b>background-attachement:scroll;</b><br>
+			<br>
+			<br> New Zealand's parliament was brought to a temporary halt by
+			MPs performing a haka, amid anger over a controversial bill seeking
+			to reinterpret the country's founding treaty with Māori people.
+			Opposition party MP Hana-Rawhiti Maipi-Clarke began the traditional
+			ceremonial group dance after being asked whether her party supported
+			the bill, which faced its first vote on Thursday. At the same time, a
+			hīkoi - or peaceful protest march - organised by a Māori rights group
+			is continuing to make its way towards the capital, Wellington.
+			Thousands have already joined the 10-day march against the bill,
+			which reached Auckland on Wednesday, having begun in the far north of
+			New Zealand on Monday. 
+			<b>background-attachement:fixted;</b>
+			<br>
+			<br>
+			<br>
+		</p>
+
+		<p class="lc">
+			<b>background-attachement:local;</b><br>
+			<br>
+			<br> New Zealand's parliament was brought to a temporary halt by
+			MPs performing a haka, amid anger over a controversial bill seeking
+			to reinterpret the country's founding treaty with Māori people.
+			Opposition party MP Hana-Rawhiti Maipi-Clarke began the traditional
+			ceremonial group dance after being asked whether her party supported
+			the bill, which faced its first vote on Thursday. At the same time, a
+			hīkoi - or peaceful protest march - organised by a Māori rights group
+			is continuing to make its way towards the capital, Wellington.
+			Thousands have already joined the 10-day march against the bill,
+			which reached Auckland on Wednesday, having begun in the far north of
+			New Zealand on Monday. 
+			<b>background-attachement:local;</b>
+			<br>
+			<br>
+			<br>
+		</p>
+	</section>
+
+	<section id="sec02">
+		<h2></h2>
+	</section>
+
+	<section id="sec03">
+		<h2></h2>
+	</section>
+
 </body>
 </html>

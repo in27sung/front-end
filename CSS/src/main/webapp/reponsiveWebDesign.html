@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Responsive Web Design</title>
+<link href="css/style.css" rel="stylesheet">
+<link href="css/rwd.css" rel="stylesheet">
+</head>
+<body>
+<h1>Responsive Web Design</h1>
+ <p>반응형 웹디자인 원칙 = mobile first</p>
+
+<h2>Viewport</h2>
+ <p>뷰포트는 사용자가 웹 페이지에서 볼 수 있는 영역. <br>
+뷰포트는 기기마다 다르며, 컴퓨터 화면보다 
+모바일 화면에서는 더 작으므로<br>
+모바일 화면에서 웹 페이지를 축소 방지 </p>
+ <p>&lt;meta name="viewport" 
+content="width=device-width, initial-scale=1.0"&gt;
+ </p>
+ 
+<h2>Media Queries 미디어 쿼리</h2>
+<p>
+ @media특정 조건이 참인 경우에만 CSS 속성을 적용함
+</p>
+<p>
+@media not|only mediatype and (media feature) {
+  CSS-Code;
+}
+</p>
+
+<div id="dv-mt">
+<h2>Media Types</h2>
+<ul>
+ <li>all	- Used for all media type devices
+ <li>screen	- Used for computer screens, tablets, smart-phones etc.</li>
+ <li>print	- Used for print preview mode</li>
+</ul>
+</div>
+
+<div id="dv-cd">
+<h2>Media조건</h2>
+<ul>
+ <li>width and height of the viewport
+  - 뷰포트의 너비와 높이</li>
+ <li>orientation of the viewport (landscape or portrait)
+  - 뷰포트 방향(가로 또는 세로)</li>
+ <li>resolution - 해상도</li>
+</ul>
+</div>
+
+</body>
+</html>
+
+
+
+
+

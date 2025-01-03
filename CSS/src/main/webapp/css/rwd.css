@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* mobile first 모바일폰*/
+body {background-color: #0cf;}
+
+h2 {border-left: 10px solid #337;
+	margin-top: 3em;}
+	
+p {background-color: #fff;
+padding: 1em;}
+
+ul {background-color: #ccc;
+padding: 1em 3em;}
+
+/* tablet - 768px */
+@media screen and (min-width: 768px) {
+	body {background-color: #c0f;
+	margin-top: 3.5em; }
+}
+
+/* pc - 1000px */
+@media screen and (min-width: 1000px) {
+	body {background-color: #cf0;
+/* 	background-image: url("ddd.jpg"); */
+	}
+	
+	h2 {border-left:10px solid #373;}
+
+#dv-mt, #dv-cd {border: 1px solid red;
+	width:45%;
+	display: inline-block;
+	margin-left: 3%;
+	vertical-align: top;}
+	
+}
+
+
+/* Media Type - print*/
+@media print {
+		
+body, p, ul {background-color: #fff;
+	background-image: none;
+}
+	
+}
+ 

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="css/style.css" rel="stylesheet">
+<link href="css/transform.css" rel="stylesheet">
+</head>
+<body>
+	<h1>transform 요소의 변형</h1>
+
+	<ul>
+		<li>transform:translate(Xn,Yn); 위치 변형. <br> (양수값은 우측이나 아래로,
+			음수값은 좌측이나 위로)
+		</li>
+		<li>transform:scale(Xn,Yn); 크기 변형. <br> (1을 기준으로 1보다 작으면 축소,
+			크면 확대)
+		</li>
+		<li>transform:rotate(ndeg); 회전 변형. 각도 단위 deg 사용 <br> (양수값은
+			시계방향으로, 음수값은 반시계방향으로)<br> x나 y를 추가하면 3차원 회전이 됨.
+		</li>
+		<li>transform:skew(ndeg); 기울기 변형. 각도 단위 deg 사용 <br> (양수값은
+			시계방향으로, 음수값은 반시계방향으로)<br> x나 y를 추가하면 3차원 회전이 됨.
+		</li>
+
+		<h1>transform-origin 변형의 기준점 변경</h1>
+		<p>
+			기준점이 기본값은 정중앙임(50% 50%/) <br> 수평 수직 순서대로 방향값(left/center/right)
+			나 수치값(Xnpx/Xn%/Xnem Ynpx/Yn%/Ynem) 등으로 수정 가능
+		</p>
+	</ul>
+
+	<section id="sec01">
+		<h2>1. transform:translate(); 위치 변형</h2>
+
+		<p class="tr01">transform:translateX(1000px);</p>
+		<p class="tr02">transform:translateX(-500px);</p>
+		<p class="tr03">transform:translateY(500px);</p>
+		<p class="tr04">transform:translateY(-500px);</p>
+		<p class="tr05">transform:translate(1000px,-300px);</p>
+		<p class="tr06">transform:translate(100%,100%);</p>
+		<div id="cnt">
+			[center] <br> position: absolute; <br> left: 50%; top:50%;
+			<br>
+			<!-- 상위요소의 정중앙에서 시작 -->
+			transform:translate(-50%,-50%);
+			<!-- 자신의 크기 절반만큼 위와 앞으로
+  이동해서 항상 상위요소의 정중앙에 위치 -->
+		</div>
+	</section>
+
+
+	<section id="sec02">
+		<h2>2. transform:scale(); 크기 변형</h2>
+
+		<p class="sc01">
+			transform:scaleX(0.5); <br> <img alt="daisy" src="img/lotus.png">
+		</p>
+		<p class="sc02">
+			transform:scaleX(2); <br> <img alt="daisy" src="img/lotus.png">
+		</p>
+		<p class="sc03">
+			transform:scaleY(0.5); <br> <img alt="daisy" src="img/lotus.png">
+		</p>
+		<p class="sc04">
+			transform:scaleY(1.5); <br> <img alt="daisy"
+				src="img/lotus.png>
+		</p>
+		<p class="sc05">
+			transform:scale(); <br> <img alt="daisy" src="img/lotus.png">
+		</p>
+		<p class="sc06">
+			transform:scale(); <br> <img alt="daisy" src="img/lotus.png">
+		</p>
+		<p class="sc07">
+			<b>lotus</b> <br> <br> transform:scale(); <br> <img
+				alt="daisy" src="img/lotus.png">
+		</p>
+	</section>
+
+
+	<section id="sec03">
+		<h2>3. transform:scale(); 크기 변형</h2>
+
+		<p class="ro01">
+			transform:rotate(180deg); <br> <img alt="car"
+				src="img/korean-finger-heart.png">
+		</p>
+		<p class="ro02">
+			transform:rotate(-180deg); <br> <img alt="car"
+				src="img/korean-finger-heart.png">
+		</p>
+		<p class="ro03">
+			transform:rotate(360deg); <br> <img alt="car"
+				src="img/korean-finger-heart.png">
+		</p>
+		<p class="ro04">
+			transform:scaleY(1.5); <br> <img alt="car"
+				src="img/korean-finger-heart.png">
+		</p>
+		<p class="ro05">
+			transform:rotateY(180deg); <br> <img alt="car"
+				src="img/korean-finger-heart.png">
+		</p>
+		<p class="ro06">
+			transform:rotateX(360deg); <br> <img alt="car"
+				src="img/korean-finger-heart.png">
+		</p>
+		<p class="ro07">
+			transform:rotateY(360deg); <br> <img alt="car"
+				src="img/korean-finger-heart.png">
+		</p>
+		<p class="ro08">
+			transform:rotate(360deg); <br> <img alt="car"
+				src="img/korean-finger-heart.png">
+		</p>
+	</section>
+
+
+	<section id="sec04">
+		<h2>4. transform:skew(); 기울기 변형</h2>
+
+		<p class="sk01">
+			transform:skew(30deg); <br> <img alt="daisy" src="img/lotus.png">
+		</p>
+		<p class="sk02">
+			transform:skew(2); <br> <img alt="daisy" src="img/lotus.png">
+		</p>
+		<p class="sk03">
+			transform:skew(0.5); <br> <img alt="daisy" src="img/lotus.png">
+		</p>
+		<p class="sk04">
+			transform:skew(1.5); <br> <img alt="daisy" src="img/lotus.png">
+		</p>
+		<p class="sk05">
+			transform:skew(); <br> <img alt="daisy" src="img/lotus.png">
+		</p>
+		<p class="sk06">
+			transform:skew(); <br> <img alt="daisy" src="img/lotus.png">
+		</p>
+	</section>
+
+
+	<section id="sec05">
+		<h2>5. transform-origin 변형의 기준점 변경</h2>
+
+		<p class="or01">
+			transform-origin: 30deg; <br> <img alt="daisy"
+				src="img/lotus.png">
+		</p>
+		<p class="or02">
+			transform-origin: 50% 100%; <br> <img alt="daisy"
+				src="img/lotus.png">
+		</p>
+		<p class="or03">
+			transform-origin: 0% 50%; <br> <img alt="daisy"
+				src="img/lotus.png">
+		</p>
+		<p class="or04">
+			transform-origin: center center; <br> <img alt="daisy"
+				src="img/lotus.png">
+		</p>
+		<p class="or05">
+			transform-origin: 100% 100%; <br> <img alt="daisy"
+				src="img/lotus.png">
+		</p>
+		<p class="or06">
+			transform-origin: -600px, -500px; <br> <img alt="daisy"
+				src="img/lotus.png">
+		</p>
+	</section>
+
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+table, th, td {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+/* 1. table-layout: fixed; */
+#tb01 {
+	width: 900px;
+	height: 600px;
+	/* 테이블 칸 크기 비율 설정 */
+	table-layout: fixed;
+}
+
+#tb01 th {
+	background-color: #0c9;
+	padding-left: 0.8em;
+	color: #fff;
+	font-size: 1.15em;
+	text-align:left;
+}
+
+#tb01 td {
+	padding-left:0.9em;
+}
+
+#td-h {
+	height: 80px;
+	vertical-align: top;
+}
+
+/* 2. Stripe style*/
+#tb02 {
+	width: 800px;
+	height: 600px;
+}
+
+#tb02 th {
+	background-color: #059;
+	padding: 6px 0 ;
+	font-size: 1.2em;
+	color: #fff;	
+	text-align: left;
+}
+
+#tb02 td {padding: 0 6px;}
+
+/* A:nth-of-type(n)는 n번째에 해당하는 순서 선택자. n은 숫자나 수식 가능.  */
+#tb02 tr:nth-child(even){/* (2n)  = */
+	background-color: #f2f2f2;
+}
+/* 행의 갯수, 열의 갯수 */
+#tb02 tr:nth-of-type(7)>td:nth-of-type(2){
+	color: #f00;
+	}
+
+#tb02 tr:hover {
+	background-color: #ddd;
+	cursor: pointer;
+}
+
+/* 3. border-spacing */
+#tb03 {
+	border-spacing: 20px 10px;
+	
+}
+
+#tb03 th, #tbo3 td {padding: 0.8em}
+
+/* 4. border-collapse: collapse;*/
+#tb04 {
+	border-collapse: collapse;
+}
+
+#tb04 th {
+	background-color: #7d0;
+}
+
+#tb04 tr:nth-of-type(1)>th:nth-of-type(1){
+	border-radius: 24px 0 0 0;
+}
+.th03 {border-radius: 0 24px 0 0;}
+
+#tb04 th, #tb04 td {
+	padding: 0.8em;
+}
+
+/* border-radius */
+aside>p {
+	border: 2px dashed #48a;
+	width: 500px; 
+	height: 300px;
+	padding: 0.8em;
+	display: inline-block;
+	margin-right: 1.5em;
+}
+
+.brd01 {
+	border-radius: 16px;
+}
+
+.brd02 {
+	border-radius: 50px 0;
+}
+
+.brd03 {
+	border-radius: 0 100px;
+}
+
+.brd04 {
+	border-radius: 0 30px 50px 100px;
+}
+

@@ -1,0 +1,252 @@
+@charset "UTF-8";
+
+ul>li:first-line { /* A:first-line 
+ A의 첫 줄만 지정하는 선택자 */
+	font-size: 1.2em;
+	color: #07b;
+}
+
+/* 1. transform:translate(); 위치 변형 */
+#sec01>p {
+	border: 1px solid;
+	width: 200px;
+}
+
+.tr01 {
+	transform: translateX(1000px);
+}
+
+.tr02 {
+	transform: translateX(-500px);
+}
+
+#sec01:hover>.tr02 {
+	transform: translateX(0px);
+	transition: 1s;
+}
+
+.tr03 {
+	transform: translateY(500px);
+}
+
+.tr04 {
+	transform: translateY(-500px);
+}
+
+#sec01:hover>.tr04 {
+	transform: translateY(0px);
+	transition: 1s;
+}
+
+.tr05 {
+	transform: translate(1000px, -300px);
+}
+
+#sec01:hover>.tr06 {
+	transform: translate(100%, 100%);
+}
+
+#sec01 {
+	position: relative;
+	overflow: hidden;
+}
+
+#cnt {
+	background-color: #c6f;
+	width: 30%;
+	height: 100px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* 2. transform:scale(); 크기 변형 */
+#sec02>p {
+	/* 	border: 1px solid; */
+	width: 640px;
+	display: inline-block;
+}
+
+.sc01 {
+	transform: scaleX(0.5);
+}
+
+.sc02 {
+	transform: scaleX(2);
+}
+
+.sc03 {
+	transform: scaleY(0.5);
+}
+
+.sc04:hover {
+	transform: scaleY(1.5);
+}
+
+#sec02:hover>.sc05 {
+	transform: scale(0.3, 0.3);
+}
+
+#sec02:hover>.sc06 {
+	transform: scale(1.5, 1.5);
+	transition: 1s;
+}
+
+.sc07 {
+	overflow: hidden;
+}
+
+.sc07>b {
+	font-size: 3em;
+	text-transform: uppercase;
+	display: block;
+	transform: translate(300px, 200px);
+}
+
+.sc07:hover>b {
+	transform: translate(200px, 150px);
+	transition: 1.2s;
+}
+
+.sc07>img {
+	opacity: 0.6;
+	transform: scale(3, 3);
+}
+
+.sc07:hover>img {
+	opacity: 1;
+	transform: scale(1, 1);
+	transition: 0.8s;
+}
+
+/* 3. transform:rotate(); 회전 변형 */
+#sec03>p {
+	border: 1px solid;
+	width: 400px;
+	display: inline-block;
+}
+
+#sec03>p>img {
+	width: 400px;
+}
+
+#sec03:hover>.ro01 {
+	transform: rotate(180deg);
+	transition: 1s;
+}
+
+#sec03:hover>.ro02 {
+	transform: rotate(-180deg);
+	transition: 1s;
+}
+
+.ro03:hover {
+	transform: rotate(360deg);
+	transition: 2s;
+}
+
+.ro04:hover {
+	transform: rotateX(180deg);
+	transition: 1s;
+}
+
+.ro05:hover {
+	transform: rotateY(180deg);
+	transition: 1s;
+}
+
+.ro06:hover {
+	transform: rotateX(360deg);
+	transition: 1s;
+}
+
+.ro07:hover {
+	transform: rotateY(360deg);
+	transition: 1s;
+}
+
+.ro08>img:hover {
+	transform: rotateY(1080deg);
+	transition: 1s;
+}
+
+/* 4. transform:skew( ); 기울기 변형 */
+.sk01 {
+	transform: skewX(30deg);
+}
+
+.sk02 {
+	transform: skewX(-30deg);
+}
+
+.sk03:hover {
+	transform: skewY(30deg);
+	transition: 1s;
+}
+
+.sk04:hover {
+	transform: skewY(-30deg);
+	transition: 1s;
+}
+
+#sec04:hover>.sk06 {
+	transform: skew(30deg, 30deg);
+	transition: 1s;
+}
+
+#sec04:hover>.sk05 {
+	transform: skew(-30deg, -30deg);
+	transition: 1s;
+}
+
+.or02>img {
+	transform-origin: 50% 100%;
+}
+
+/* 5. transform-origin 변형의 기준점 변경 */
+#sec05:hover>.or01>img {
+	transform: scale(1, 2);
+	transition: 1s;
+}
+
+.or2>img {
+	transform-origin: 50% 100%;
+}
+
+#sec05:hover>.or02>img {
+	transform: scale(1, 2);
+	transition: 1s;
+}
+
+.or03 {
+	transform-origin: 0% 50%;
+}
+
+#sec05:hover>.or03 {
+	transform: scale(0.1, 1);
+	transition: 1s;
+}
+
+#sec05:hover>.or4>img {
+	transform: rotate(-360deg);
+	transition: 1s;
+}
+
+.or05>img {
+	transform-origin: 100% 100%;
+}
+
+#sec05:hover>.or05>img {
+	transform: rotate(-360deg);
+	transition: 1s;
+}
+
+.or06>img {
+	transform-origin: -600px -500px;
+}
+
+#sec05:hover>.or06>img {
+	transform: rotate(-360deg);
+	transition: 3s;
+}
